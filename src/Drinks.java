@@ -10,8 +10,11 @@ public class Drinks extends Goods{
         super(name, prise, quantity, unit);
         this.volume = volume;
     }
+    public Double getVolume(){
+        return volume;
+    }
     @Override
     public String toString() {
-        return super.toString() + " Объём: \'" + volume + "\'";
+        return super.toString() + " Объём: \'" + getVolume() + "\'";
     }
 }
