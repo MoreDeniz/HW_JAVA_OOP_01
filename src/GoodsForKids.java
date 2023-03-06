@@ -13,7 +13,7 @@ public class GoodsForKids extends Goods{
         this.minAge = minAge;
         this.hypoallergenic = hypoallergenic;
     }
-    public Integer getMinage(){
+    public Integer getMinAge(){
         return minAge;
     }
     public String getHipo(){
@@ -21,7 +21,7 @@ public class GoodsForKids extends Goods{
     }
     @Override
     public String toString() {
-        return super.toString() + ", Минимальный возраст: \'" + getMinage() + "\'," +
+        return super.toString() + ", Минимальный возраст: \'" + getMinAge() + "\'," +
                                   "Гипоаллергенность: \'" + getHipo() + "\'";
     }
 }
