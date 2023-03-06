@@ -20,11 +20,23 @@ public class Diapers extends GoodsForKids{
         this.maxWeight = maxWeight;
         this.type = type;
     }
+    public String getSize(){
+        return size;
+    }
+    public Double getMinWeight(){
+        return minWeight;
+    }
+    public Double getMaxWeight(){
+        return maxWeight;
+    }
+    public String getType(){
+        return type;
+    }
     @Override
     public String toString() {
-        return super.toString() + ", Размер: \'" + size +
-                "\', Минимальный вес: \'" + minWeight +
-                "\', Максимальный вес: \'" + minWeight +
-                "\' Тип: \'" + type + "\'";
+        return super.toString() + ", Размер: \'" + getSize() +
+                "\', Минимальный вес: \'" + getMinWeight() +
+                "\', Максимальный вес: \'" + getMaxWeight() +
+                "\' Тип: \'" + getType() + "\'";
     }
 }
