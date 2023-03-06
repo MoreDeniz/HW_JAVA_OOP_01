@@ -13,9 +13,15 @@ public class Milk extends Drinks{
         this.fat = fat;
         this.bestBefore = bestBefore;
     }
+    public Double getFat(){
+        return fat;
+    }
+    public Integer getBestBefore(){
+        return bestBefore;
+    }
     @Override
     public String toString() {
-        return super.toString() + ", Процент жирности: \'" + fat +
-                "%\', Срок годности: \'" + bestBefore + " суток\'";
+        return super.toString() + ", Процент жирности: \'" + getFat() +
+                "%\', Срок годности: \'" + getBestBefore() + " суток\'";
     }
 }
